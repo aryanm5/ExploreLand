@@ -439,7 +439,7 @@ public class CraftButton {
 		y = yPixel;
 		recipeIndex = newRecipeIndex;
 		try {
-			image = new Image(item.replaceAll("\\.", "//") + ".png");
+			image = new Image("resources/" + item.replaceAll("\\.", "/") + ".png");
 		} catch (SlickException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -143,8 +143,8 @@ public class Smelting {
 			x = xPixel;
 			y = yPixel;
 			try {
-				outImage = new Image(output.replaceAll("\\.", "//") + ".png");
-				inImage = new Image(input.replaceAll("\\.", "//") + ".png");
+				outImage = new Image("resources/" + output.replaceAll("\\.", "/") + ".png");
+				inImage = new Image("resources/" + input.replaceAll("\\.", "/") + ".png");
 			} catch (SlickException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
